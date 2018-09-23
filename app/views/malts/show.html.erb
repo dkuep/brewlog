@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @malt.name %>
+</p>
+
+<p>
+  <strong>Ebcmin:</strong>
+  <%= @malt.ebcmin %>
+</p>
+
+<p>
+  <strong>Ebcmax:</strong>
+  <%= @malt.ebcmax %>
+</p>
+
+<%= link_to 'Edit', edit_malt_path(@malt) %> |
+<%= link_to 'Back', malts_path %>

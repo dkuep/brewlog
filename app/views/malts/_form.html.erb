@@ -1,0 +1,32 @@
+<%= form_with(model: malt, local: true) do |form| %>
+  <% if malt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(malt.errors.count, "error") %> prohibited this malt from being saved:</h2>
+
+      <ul>
+      <% malt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :malt_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ebcmin %>
+    <%= form.text_field :ebcmin, id: :malt_ebcmin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ebcmax %>
+    <%= form.text_field :ebcmax, id: :malt_ebcmax %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

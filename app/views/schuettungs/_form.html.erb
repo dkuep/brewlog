@@ -1,0 +1,14 @@
+<%= form_for([@brew, @brew.schuettungs.build]) do |f| %>
+
+<%= f.label :malt_id %>
+<%= f.select :malt_id, Malt.all.collect { |p| [ p.name, p.id ] }, include_blank: true %>
+
+<%= f.label :amount %>
+<%= f.text_field :amount %>
+
+<%= f.label :note %>
+<%= f.text_area :note %>
+
+<br>
+<%= f.submit %>
+<% end %>

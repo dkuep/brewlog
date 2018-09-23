@@ -1,0 +1,2 @@
+module SchuettungsHelper
+end

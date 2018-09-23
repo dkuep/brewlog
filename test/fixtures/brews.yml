@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  brewstyle: MyString
+  version: 
+  brewdate: 2018-09-23 00:34:01
+  notes: MyText
+
+two:
+  name: MyString
+  brewstyle: MyString
+  version: 
+  brewdate: 2018-09-23 00:34:01
+  notes: MyText

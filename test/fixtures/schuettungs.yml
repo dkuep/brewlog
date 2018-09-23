@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brew: one
+  malt: one
+  amount: 1.5
+  note: MyText
+
+two:
+  brew: two
+  malt: two
+  amount: 1.5
+  note: MyText

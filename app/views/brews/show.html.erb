@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @brew.name %>
+</p>
+
+<p>
+  <strong>Brewstyle:</strong>
+  <%= @brew.brewstyle %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @brew.version %>
+</p>
+
+<p>
+  <strong>Brewdate:</strong>
+  <%= @brew.brewdate %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @brew.notes %>
+</p>
+
+<hr>
+
+<p>
+  <strong>Schüttungen:</strong>
+  <%= render @brew.schuettungs %>
+  <p>Schüttung hinzufügen</p>
+  <%= render 'schuettungs/form' %>
+</p>
+
+
+<%= link_to 'Edit', edit_brew_path(@brew) %> |
+<%= link_to 'Back', brews_path %>
